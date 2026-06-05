@@ -47,3 +47,16 @@
 .flash-page .flip-card.swipe-right{animation:flashSwipeRight .16s ease}
 @keyframes flashSwipeLeft{to{transform:translateX(-110%) rotate(-8deg);opacity:.35}}
 @keyframes flashSwipeRight{to{transform:translateX(110%) rotate(8deg);opacity:.35}}
+
+
+/* 2026-06-01: PV routing cards for Japan-time and real-estate-sales use cases */
+.pv-routing{background:linear-gradient(180deg,rgba(236,254,255,.62),rgba(255,255,255,.2))}
+.pv-routing h2{margin:10px 0 6px}
+.pv-grid{margin-top:16px}
+.pv-card{position:relative;display:block;border-color:#bdebe5;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.pv-card:hover{transform:translateY(-2px);border-color:#0f766e;box-shadow:0 12px 28px rgba(15,118,110,.14);text-decoration:none}
+.pv-card h3{margin:.2rem 0 .35rem;color:#0f172a}
+.route-chip{display:inline-flex;margin-top:8px;padding:6px 10px;border-radius:999px;background:#0f766e;color:#fff;font-size:13px;font-weight:900}
+.pv-links{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.pv-links a{font-weight:800}
+@media(max-width:720px){.pv-routing{padding-top:28px}.pv-card{padding:16px}.pv-links{font-size:14px;line-height:1.9}}
