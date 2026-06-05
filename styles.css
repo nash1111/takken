@@ -72,3 +72,15 @@
 .flash-question-cta{margin:18px 0;background:linear-gradient(135deg,#ecfeff,#fff7ed);border-color:#99f6e4}
 .flash-question-cta h2{margin-top:0}
 @media(max-width:720px){.flash-main-btn,.flash-question-cta .btn{width:100%;text-align:center;padding:15px 18px}.thumb-note{font-size:14px}.flash-question-cta{padding:16px}}
+
+/* 2026-06-01: quiz completion and progress improvements */
+.quiz-progress-meter{height:12px;border-radius:999px;background:#e2e8f0;overflow:hidden;border:1px solid var(--line);margin:-4px 0 6px}
+.quiz-progress-meter span{display:block;height:100%;background:linear-gradient(90deg,#0f766e,#22c55e);border-radius:999px;transition:width .18s ease}
+.quiz-progress-copy{margin:0 0 10px;color:#475569;font-size:14px;font-weight:800;text-align:center}
+.quiz-done h1{margin-bottom:10px}
+.quiz-score-band{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:12px 0}
+.quiz-score-band span{background:#ecfeff;border:1px solid #99f6e4;border-radius:14px;padding:10px;text-align:center;color:#115e59;font-weight:800}
+.quiz-score-band b{display:block;font-size:28px;color:#0f766e}
+.quiz-next-routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0}
+.quiz-next-routes .card{box-shadow:none}
+@media(max-width:720px){.quiz-next-routes{grid-template-columns:1fr}.quiz-score-band b{font-size:24px}}
