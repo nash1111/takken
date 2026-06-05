@@ -65,3 +65,10 @@
 .shorts-hero{background:radial-gradient(circle at 15% 0,rgba(249,115,22,.22),transparent 30%),linear-gradient(135deg,#ecfeff,#fff7ed)}
 .notice code{display:block;margin-top:8px;overflow-wrap:anywhere;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px}
 @media(max-width:720px){.shorts-hero .cta .btn{width:100%;text-align:center}}
+
+/* 2026-06-01: emphasize flashcards as the primary thumb-friendly learning route */
+.flash-main-btn{font-size:1.05em;box-shadow:0 10px 24px rgba(15,118,110,.22)}
+.thumb-note{margin:8px 0 0;color:#334155;font-weight:700}
+.flash-question-cta{margin:18px 0;background:linear-gradient(135deg,#ecfeff,#fff7ed);border-color:#99f6e4}
+.flash-question-cta h2{margin-top:0}
+@media(max-width:720px){.flash-main-btn,.flash-question-cta .btn{width:100%;text-align:center;padding:15px 18px}.thumb-note{font-size:14px}.flash-question-cta{padding:16px}}
