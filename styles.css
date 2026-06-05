@@ -93,3 +93,11 @@
 #examDays{font-size:1.45em;color:#fde68a}
 .countdown-card .btn.alt{background:#fff;color:#0f172a;border-color:#fff}
 @media(max-width:720px){.countdown-card{display:block}.countdown-card .cta .btn{width:100%;text-align:center}}
+
+/* 2026-06-01: comparison table pages */
+.compare-hero{background:linear-gradient(135deg,#eff6ff,#ecfeff);border-color:#bae6fd}
+.compare-table th{white-space:nowrap}
+.compare-table td:last-child{font-weight:700;color:#0f766e}
+.compare-cards{margin:16px 0 20px}
+.compare-cards .card{box-shadow:none;border-color:#bfdbfe}
+@media(max-width:720px){.compare-table{font-size:14px}.compare-table th,.compare-table td{padding:9px 8px}}
