@@ -84,3 +84,12 @@
 .quiz-next-routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0}
 .quiz-next-routes .card{box-shadow:none}
 @media(max-width:720px){.quiz-next-routes{grid-template-columns:1fr}.quiz-score-band b{font-size:24px}}
+
+/* 2026-06-01: exam countdown card */
+.exam-countdown{padding-top:0}
+.countdown-card{display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(135deg,#0f172a,#0f766e);color:#fff;border:0}
+.countdown-card h2{margin:4px 0 6px;color:#fff}
+.countdown-card p{color:#e0f2fe}
+#examDays{font-size:1.45em;color:#fde68a}
+.countdown-card .btn.alt{background:#fff;color:#0f172a;border-color:#fff}
+@media(max-width:720px){.countdown-card{display:block}.countdown-card .cta .btn{width:100%;text-align:center}}
