@@ -1,0 +1,39 @@
+name: Daily PV Summary
+
+on:
+  schedule:
+    # 23:55 JST every day
+    - cron: '55 14 * * *'
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Number of JST days to summarize'
+        required: false
+        default: '1'
+
+jobs:
+  pv-summary:
+    name: Summarize Cloudflare PV
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      TAKKEN_ANALYTICS_HOST: takkensokuto.com
+      TAKKEN_ANALYTICS_TZ: Asia/Tokyo
+      TAKKEN_ANALYTICS_DAYS: ${{ github.event.inputs.days || '1' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate PV summary
+        run: |
+          python3 scripts/cloudflare_pv_summary.py | tee pv-summary.md
+          cat pv-summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload summary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pv-summary
+          path: pv-summary.md
