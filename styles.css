@@ -114,3 +114,6 @@
 .today-route-grid{margin-top:16px}
 .today-route-grid .pv-card{background:#fff}
 @media(max-width:720px){.today-loop{padding-top:12px}.today-loop-card{grid-template-columns:1fr;padding:16px}.today-loop-cta .btn{width:100%;text-align:center}.today-route-grid{grid-template-columns:1fr}}
+
+/* 2026-06-08: PV-driven civil law topic hub */
+.jiko-routing{background:linear-gradient(135deg,#eef2ff,#ecfeff);border-color:#bfdbfe}.jiko-routing ol{margin-top:0}.jiko-hero .cta .btn{box-shadow:0 12px 30px rgba(15,118,110,.18)}@media(max-width:720px){.jiko-routing .cta .btn{width:100%;text-align:center}}
