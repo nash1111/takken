@@ -101,3 +101,16 @@
 .compare-cards{margin:16px 0 20px}
 .compare-cards .card{box-shadow:none;border-color:#bfdbfe}
 @media(max-width:720px){.compare-table{font-size:14px}.compare-table th,.compare-table td{padding:9px 8px}}
+
+/* 2026-06-06: turn /today/ into a daily PV loop hub */
+.today-loop{padding-top:18px;background:linear-gradient(180deg,#fff7ed,#f8fafc)}
+.today-loop-card{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.9fr);gap:18px;align-items:center;border-color:#fed7aa;background:linear-gradient(135deg,#fff,#fffbeb)}
+.today-loop-card h2{margin:10px 0 8px;font-size:clamp(24px,4vw,38px);line-height:1.18}
+.today-steps{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.today-steps li{background:#fff;border:1px solid #fed7aa;border-radius:14px;padding:12px}
+.today-steps b{display:block;color:#9a3412;font-size:15px}
+.today-steps span{display:block;color:#475569;font-size:14px;line-height:1.55}
+.today-loop-cta{grid-column:1/-1;margin-top:4px}
+.today-route-grid{margin-top:16px}
+.today-route-grid .pv-card{background:#fff}
+@media(max-width:720px){.today-loop{padding-top:12px}.today-loop-card{grid-template-columns:1fr;padding:16px}.today-loop-cta .btn{width:100%;text-align:center}.today-route-grid{grid-template-columns:1fr}}
